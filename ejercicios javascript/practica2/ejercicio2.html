@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+    <script>
+        
+        var numeros = [];
+
+        for (var i = 1; i <= 10; i++) {
+            var numero = parseFloat(prompt("Ingrese un número:"));
+            if (!isNaN(numero)) {
+                numeros.push(numero);
+            } else {
+                alert("Introduce un número válido");
+                i--;
+            }
+        }
+
+        document.write("Números ingresados:<br>" + "<br>");
+        
+        for (var i = 0; i < numeros.length; i++) {
+            document.write(numeros[i]+ "<br>");
+        }
+        
+        var suma = 0;
+        for (var i = 0; i < numeros.length; i++) {
+            suma += numeros[i];
+        }
+
+        document.write("<br>" + "Suma de los números:" + "<br>");
+        document.write("<p>" + suma + "</p>");
+    </script>
+</body>
+</html>

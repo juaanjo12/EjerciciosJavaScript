@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+</head>
+<body>
+    <script>
+        // Crear un array para almacenar los múltiplos de 11
+        var multiplosDe11 = [];
+
+        // Calcular y almacenar los múltiplos de 11 menores de 3000
+        for (var i = 11; i < 3000; i += 11) {
+            multiplosDe11.push(i);
+        }
+
+        // Mostrar los múltiplos de 11
+        document.write("<h2>Múltiplos de 11 menores de 3000:</h2>");
+        document.write("<ul>");
+        for (var i = 0; i < multiplosDe11.length; i++) {
+            document.write("<li>" + multiplosDe11[i] + "</li>");
+        }
+        document.write("</ul>");
+
+        // Calcular la suma de los múltiplos de 11
+        var suma = 0;
+        for (var i = 0; i < multiplosDe11.length; i++) {
+            suma += multiplosDe11[i];
+        }
+
+        // Mostrar la suma en pantalla
+        document.write("<h2>Suma de los múltiplos de 11:</h2>");
+        document.write("<p>" + suma + "</p>");
+    </script>
+</body>
+</html>
